@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wien Austria Udacity</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel=icon href=images/flag.png>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <form class="form-inline">
+                <input class="form-control" placeholder="Filter" type="text" data-bind="textInput: viewModel.search, event: {keyup: viewModel.filterMarkers}">
+            </form>
+            <span class="h2 navbar-brand mb-0">Wien, Austria</span>
+        </nav>
+        <div class="container-fluid">
+            <div class="row bg-light">
+                <aside class="col-12 col-sm-3 choices">
+                    <ul data-bind="foreach: viewModel.filteredItems" class="text-primary">
+                        <li class="links"  data-bind="text: title, click: viewModel.clickMarker"></li>
+                    </ul>
+                    <div class="wikipedia-container">
+                        <h3 id="wikipedia-header">Wikipedia Articles</h3>
+                        <ul id="wikipedia-links" data-bind="foreach: viewModel.wikiResponse">
+                            <li><a data-bind="text: $data.title, attr:{ href: $data.link}, visible: $data.link " target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <main class="col-12 col-sm-9">
+                    <div id="map"></div>
+                </main>
+            </div>
+        </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src='js/knockout-3.4.2.js'></script>
+        <script src="js/model.js"></script>
+        <script src="js/app.min.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG73J1nZFxhTYruqV4ISh3b55eU-8tGe4&callback=initMap" onerror="mapNotLoad()"></script>
+    </body>
+</html>
