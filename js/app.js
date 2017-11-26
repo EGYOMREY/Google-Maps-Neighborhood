@@ -1,5 +1,4 @@
-//I read in the forums that I could use this to avoid the error of using a function inside a loop.. I tried using the forEach but didn't work.
-/*jshint loopfunc: true */
+
 //In case the map doesn't load.
 var mapNotLoad = function() {
     alert("Error while loading your Map"); //I found an alert more appealing for the situation
@@ -251,7 +250,7 @@ var viewModel = {
             loadData = function() {
                 viewModel.wikiResponse([]);
                 var finalResult = marker.title; //marker.title
-                var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + finalResult + '&format=json&callback=wikiCallback';
+                var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + finalResult + '&format=json&callback=wikiCallback';
                 $.ajax({
                     url: wikiUrl,
                     dataType: "jsonp",
