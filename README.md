@@ -1,10 +1,25 @@
 # Udacity Neighborhood Project (5)
 
+Project Details
+
+- Review the [JavaScript Design Patterns course](https://www.udacity.com/course/javascript-design-patterns--ud989)
+- Use the Knockout framework; Knockout must be used to handle the list, filter, and any other information on the page that is subject to changing state. Things that should not be handled by Knockout: anything the Maps API is used for, creating markers, tracking click events on markers, making the map, refreshing the map.
+- Asynchrony and Error Handling; all data APIs used in the project should load asynchronously and errors should be handled gracefully
+- Write code required to add a full-screen map to your page using the Google Maps API. For sake of efficiency, the map API should be called only once.
+- You may want to get a Google Maps API key, and include it as the value of the key parameter when loading the Google Maps API in index.html: <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=[YOUR_API_KEY]"></script>
+- Write code required to display map markers identifying at least 5 locations that you are interested in within this neighborhood. Your app should display those locations by default when the page is loaded.
+- Implement a list view of the set of locations defined in step 5.
+- Provide a filter option that uses an input field to filter both the list view and the map markers displayed by default on load. The list view and the markers should update accordingly in real time. Providing a search function through a third-party API is not enough to meet specifications. This filter can be a text input or a dropdown menu.
+- Add functionality using third-party APIs to provide information when a map marker or list view entry is clicked (ex: Yelp reviews, Wikipedia, Flickr images, etc).
+- Add functionality to animate a map marker when either the list item associated with it or the map marker itself is selected.
+- Add functionality to open an infoWindow
+- Selecting a location via list item or map marker should cause the map marker to bounce or in some other way animate to indicate that the location has been selected and associated info window should open above the map marker with additional information.
+
 ## How to use this App?
 - Download or Clone this repository
 - Open index.html
 - Click on the flags to see info about places in Wien, Austria
-- Filter or click on the left menu so you can see more information about places in Wien, Austria
+- Filter or click on the left menu so you can see more information about the selected place
 - Whenever you click a marker or an option in the left menu there will be some information displayed about that place, plus a Wikipedia article so you can learn more about it.
 
 ## Research and sources used
