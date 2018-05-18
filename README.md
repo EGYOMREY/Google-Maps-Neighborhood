@@ -1,11 +1,18 @@
 # Google Maps Project
 
-[DIRECT LINK](https://egyomrey.github.io/Google-Maps-Neighborhood/)
+Locate 8 different places in a map in Vienna, click on any of those locations to get a small description and an available Wikipedia article about it. [Try it(https://egyomrey.github.io/Google-Maps-Neighborhood/) :arrow_upper_right:
+
+## Desktop version
+![image](https://i.imgur.com/SfTphOu.png)
+
+## Mobile version
+![image](https://i.imgur.com/7EFzug5.png)
+
 
 ## Project Details
 
 - KnockoutJS is used to handle the list, filter, and any other information on the page that is subject to changing state.
-- The Google Maps API was used to build a map, with at least 6 locations I'd like to visit in Wien, Austria.
+- The Google Maps API was used to build a map, with at least 8 locations I'd like to visit in Wien, Austria.
 - Every location when clicked displays an infowindow.
 - There's a filter to search for a specific locations (in the provided list only)
 
