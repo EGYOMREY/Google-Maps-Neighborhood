@@ -1,6 +1,6 @@
 # Google Maps Project
 
-Locate 8 different places in a map in Vienna, click on any of those locations to get a small description and an available Wikipedia article about it. [Try it(https://egyomrey.github.io/Google-Maps-Neighborhood/) :arrow_upper_right:
+Locate 8 different places in a map in Vienna, click on any of those locations to get a small description and an available Wikipedia article about it. [Try it](https://egyomrey.github.io/Google-Maps-Neighborhood/) :arrow_upper_right:
 
 ## Desktop version
 ![image](https://i.imgur.com/SfTphOu.png)
